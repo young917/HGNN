@@ -1,5 +1,5 @@
 from torch import nn
-from models import HGNN_conv
+from libs.HGNN.models.layers import HGNN_conv
 import torch.nn.functional as F
 
 

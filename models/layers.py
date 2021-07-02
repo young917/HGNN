@@ -26,6 +26,8 @@ class HGNN_conv(nn.Module):
         x = x.matmul(self.weight)
         if self.bias is not None:
             x = x + self.bias
+        print(G.shape)
+        print(x.shape)
         x = G.matmul(x)
         return x
 
